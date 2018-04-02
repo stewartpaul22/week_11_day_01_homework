@@ -21,7 +21,7 @@ var result = function() {
 
 console.log(result());
 
-//// Episode 3
+//// Episode 3:  The array 'myAnimals' is declared globally.  Then, within the 'listAnimals' function, instead of creating a new array, 'myAnimals' is reassigned a new set of values.  When listAnimals is invoked the for loop iterates over the new values in the array.
 
 var myAnimals = ['Chickens', 'Cats', 'Rabbits'];
 
