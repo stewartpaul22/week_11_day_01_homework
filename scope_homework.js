@@ -49,7 +49,7 @@ var allSuspects = function() {
 allSuspects();
 console.log( 'Suspect three is:' + suspectThree );
 
-//// Episode 5
+//// Episode 5:  An object called 'detective' is created with the properties 'name' and 'pet', each of which is assigned a value.  The function 'printName' is then declared. The function takes in the 'detective' object as an argument and returns the value of the name property.  The function 'detectiveInfo' is then declared; it assigns a new value to the detective object's 'name' property then returns the method call of printName(detective). The result being, when detectiveInfo() is called it returns the updated value for the detective object's name.
 
 var detective = {
   name : 'Ace Ventura',
