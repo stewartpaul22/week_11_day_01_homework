@@ -10,7 +10,7 @@ var printName = function() {
 
 printName();
 
-//// Episode 2
+//// Episode 2:  The variable 'score' is declared globally and has a value assigned.  The variable 'score' is then declared locally to the result function; the local 'score' variable will take priority over the global version - known as variable shadowing.  Therefore, when result is invoked it returns 3.
 
 score = 5;
 
