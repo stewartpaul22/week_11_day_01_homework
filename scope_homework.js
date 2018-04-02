@@ -1,4 +1,6 @@
-// Episode 1
+//// Go through each sample code and work out what the output will be and explain what happened.
+
+//// Episode 1:  The variable 'name' is global, so it can be accessed from within printName when printName is invoked.  When printName is invoked it concatenates the value assigned to 'name' to the string within the function body, then prints out the full string.
 
 var name = 'Keith';
 
@@ -8,7 +10,7 @@ var printName = function() {
 
 printName();
 
-// Episode 2
+//// Episode 2
 
 score = 5;
 
@@ -19,7 +21,7 @@ var result = function() {
 
 console.log(result());
 
-// Episode 3
+//// Episode 3
 
 var myAnimals = ['Chickens', 'Cats', 'Rabbits'];
 
@@ -32,7 +34,7 @@ var listAnimals = function() {
 
 listAnimals();
 
-// Episode 4
+//// Episode 4
 
 var suspectOne = 'Jay';
 var suspectTwo = 'Val';
@@ -47,7 +49,7 @@ var allSuspects = function() {
 allSuspects();
 console.log( 'Suspect three is:' + suspectThree );
 
-// Episode 5
+//// Episode 5
 
 var detective = {
   name : 'Ace Ventura',
@@ -65,7 +67,7 @@ var detectiveInfo = function() {
 
 console.log(detectiveInfo());
 
-// Episode 6
+//// Episode 6
 
 var murderer = 'rick';
 
@@ -82,6 +84,6 @@ var outerFunction = function() {
 outerFunction();
 console.log('the murderer is ', murderer);
 
-// Episode 7 - Make up your own episode/s!
+//// Episode 7 - Make up your own episode/s!
 
-// Make up your own episode which can be whatever you wish and the rest of the class will work out together what happened and what the output will be.
+//// Make up your own episode which can be whatever you wish and the rest of the class will work out together what happened and what the output will be.
