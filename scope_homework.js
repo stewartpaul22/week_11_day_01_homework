@@ -34,7 +34,7 @@ var listAnimals = function() {
 
 listAnimals();
 
-//// Episode 4
+//// Episode 4:  suspects one to four are declared globally.  'sustectThree' is then declared and assigned a new value within the allSuspects function, but because var is used, the newly assigned value only exists in the scope of the function.  Therefore, when 'suspectThree' is referenced from outside of the allSuspects function it has the globally assigned value 'Keith'.
 
 var suspectOne = 'Jay';
 var suspectTwo = 'Val';
