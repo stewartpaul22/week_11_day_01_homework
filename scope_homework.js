@@ -87,3 +87,21 @@ console.log('the murderer is ', murderer);
 //// Episode 7 - Make up your own episode/s!
 
 //// Make up your own episode which can be whatever you wish and the rest of the class will work out together what happened and what the output will be.
+
+var character = {
+  name: 'Jeffery Lebowski',
+  nickname: 'The Dude'
+};
+
+var outerFunction = function() {
+
+  var innerFunction = function() {
+    character['nickname'] = 'His Dudeness'
+  };
+
+  character['nickname'] = 'El Duderino'
+  return character['nickname']
+
+};
+
+console.log(outerFunction());
