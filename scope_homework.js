@@ -1,6 +1,6 @@
 //// Go through each sample code and work out what the output will be and explain what happened.
 
-//// Episode 1:  The variable 'name' is global, so it can be accessed from within printName when printName is invoked.  When printName is invoked it concatenates the value assigned to 'name' to the string within the function body, then prints out the full string.
+//// Episode 1:  The variable 'name' is global, therefore it can be accessed from within the function 'printName'.  When printName is invoked it concatenates the value assigned to 'name' to the string within the function body, then prints out the full string.
 
 var name = 'Keith';
 
@@ -10,7 +10,7 @@ var printName = function() {
 
 printName();
 
-//// Episode 2:  The variable 'score' is declared globally and has a value assigned.  The variable 'score' is then declared locally to the result function; the local 'score' variable will take priority over the global version - known as variable shadowing.  Therefore, when result is invoked it returns 3.
+//// Episode 2:  The variable 'score' is declared globally and has a value assigned.  The variable 'score' is then declared locally within the 'result' function; the local variable 'score' will take priority over the global version - known as variable shadowing.  Therefore, when 'result' is invoked it returns 3.
 
 score = 5;
 
@@ -21,7 +21,7 @@ var result = function() {
 
 console.log(result());
 
-//// Episode 3:  The array 'myAnimals' is declared globally.  Then, within the 'listAnimals' function, instead of creating a new array, 'myAnimals' is reassigned a new set of values.  When listAnimals is invoked the for loop iterates over the new values in the array.
+//// Episode 3:  The array 'myAnimals' is declared globally.  Then, within the 'listAnimals' function, instead of creating a new array, 'myAnimals' is reassigned a new set of values.  When listAnimals is invoked the for loop iterates over the new values in the array; Ducks, Dogs, Lions.
 
 var myAnimals = ['Chickens', 'Cats', 'Rabbits'];
 
@@ -34,7 +34,7 @@ var listAnimals = function() {
 
 listAnimals();
 
-//// Episode 4:  suspects one to four are declared globally.  'sustectThree' is then declared and assigned a new value within the allSuspects function, but because var is used, the newly assigned value only exists in the scope of the function.  Therefore, when 'suspectThree' is referenced from outside of the allSuspects function it has the globally assigned value 'Keith'.
+//// Episode 4:  suspects one to four are declared globally.  'sustectThree' is then declared and assigned a new value within the 'allSuspects' function, but because var is used, the newly assigned value only exists in the scope of the function.  Therefore, when 'suspectThree' is referenced from outside of the allSuspects function it has the globally assigned value 'Keith'.
 
 var suspectOne = 'Jay';
 var suspectTwo = 'Val';
@@ -67,7 +67,7 @@ var detectiveInfo = function() {
 
 console.log(detectiveInfo());
 
-//// Episode 6
+//// Episode 6: The variable 'murderer' is declared globally and assigned the value 'rick'.  'murderer' is again declared, inside 'outerFunction' and assigned a new value.  The 'outerFunction' version of 'murderer' is then assigned a new value inside 'innerFunction'.  However, even though 'outerFunction' is invoked, it does not return anything or assign any value that can be referenced, therefore on the last line, 'murderer' refers to the initial, global variable.
 
 var murderer = 'rick';
 
